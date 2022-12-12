@@ -4,7 +4,7 @@ int m = ReadInt("Введите m: ");
 int n = ReadInt("Введите n: ");
 
 double[,] arr = new double[m, n];
-Fill2DArrayWithRandoms(ref arr);
+Fill2DArrayWithRandoms(arr);
 Print2DArray(arr);
 
 
@@ -19,7 +19,7 @@ int ReadInt(string message)
     }
 }
 
-void Fill2DArrayWithRandoms(ref double[,] arr)
+void Fill2DArrayWithRandoms(double[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
